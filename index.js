@@ -11,7 +11,13 @@ console.log('b ' + getTypeOfArray(b));
 // Write a program that multiplies each entry in the following array by 2。
 var a = [1, 2, 3, 4, 5];
 // TODO should output [2,4,6,8,10]
-
+function multiplyTraditional(arr, multiplier) {
+    for(let i = 0 ; i < arr.length; i++) {
+        arr[i] = arr[i] * multiplier;
+    }
+    return arr;
+}
+console.log(multiplyTraditional(a, 2));
 
 // Write the program, according to the following requirements output results.
 var colors = ["Red", "Green", "White", "Black"];
