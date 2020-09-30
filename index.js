@@ -2,7 +2,11 @@
 var a = '[a, b, c, d]';
 var b = [1, 2, 3, 4];
 //TODO
-
+function getTypeOfArray(arr) {
+    return Array.isArray(arr) ? 'is an array' : 'is not an array';
+}
+console.log('a ' + getTypeOfArray(a));
+console.log('b ' + getTypeOfArray(b));
 
 // Write a program that multiplies each entry in the following array by 2。
 var a = [1, 2, 3, 4, 5];
