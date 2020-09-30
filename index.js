@@ -21,9 +21,13 @@ console.log(a);
 
 // Write the program, according to the following requirements output results.
 var colors = ["Red", "Green", "White", "Black"];
-//TODO case 1 output: 'Red Green White Black'
+//TODO 
+//case 1 output: 'Red Green White Black'
+console.log(colors.join(' '));
 // case 2 output: 'Red+Green+White+Black'
+console.log(colors.join('+'));
 // case 3 output: 'Red,Green,White,Black'
+console.log(colors.join(','));
 
 
 // Write a program to sort the Numbers in the following array from largest to smallest.
