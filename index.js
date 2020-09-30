@@ -15,9 +15,9 @@ function multiplyTraditional(arr, multiplier) {
     for(let i = 0 ; i < arr.length; i++) {
         arr[i] = arr[i] * multiplier;
     }
-    return arr;
 }
-console.log(multiplyTraditional(a, 2));
+multiplyTraditional(a, 2);
+console.log(a);
 
 // Write the program, according to the following requirements output results.
 var colors = ["Red", "Green", "White", "Black"];
