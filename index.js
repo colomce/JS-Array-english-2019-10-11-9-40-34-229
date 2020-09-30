@@ -38,3 +38,22 @@ console.log(a.sort(function(a, b){return b - a}));
 // Program to find the most frequent element in the following array.
 var a = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 //TODO should output: 'a'
+function getMostFrequentElement(arr) {
+    var mostFrequentElement;
+    var noOfOccurrence = 1;
+    for(var i = 0 ; i < arr.length; i++) {
+        var totalTimesOccured = 0;
+        for(var j = i; j < arr.length; j++) {
+            if(arr[i] == arr[j]) {
+                totalTimesOccured++;
+            }
+
+            if(noOfOccurrence < totalTimesOccured) {
+                noOfOccurrence = totalTimesOccured;
+                mostFrequentElement = arr[i];
+            }
+        }
+    }
+    return mostFrequentElement;
+}
+console.log(getMostFrequentElement(a));
